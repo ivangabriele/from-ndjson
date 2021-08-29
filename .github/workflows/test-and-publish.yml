@@ -12,6 +12,7 @@ jobs:
       - name: Setup
         uses: actions/setup-node@v2
         with:
+          cache: "npm"
           node-version: "16"
       - name: Install
         run: npm install
@@ -35,6 +36,7 @@ jobs:
       - name: Setup (NPM)
         uses: actions/setup-node@v2
         with:
+          cache: "npm"
           node-version: "16"
           registry-url: "https://registry.npmjs.org"
       - run: npm publish --access=public
@@ -43,6 +45,8 @@ jobs:
       - name: Setup (Github Packages)
         uses: actions/setup-node@v2
         with:
+          cache: "npm"
+          node-version: "16"
           registry-url: "https://npm.pkg.github.com"
       - run: npm publish --access=public
         env:
