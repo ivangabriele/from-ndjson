@@ -42,12 +42,3 @@ jobs:
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Setup (Github Packages)
-        uses: actions/setup-node@v2
-        with:
-          cache: "npm"
-          node-version: "16"
-          registry-url: "https://npm.pkg.github.com"
-      - run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
