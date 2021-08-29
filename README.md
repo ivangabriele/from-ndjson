@@ -66,7 +66,7 @@ to the remote repository.
 [img-license]: https://img.shields.io/github/license/ivangabriele/from-ndjson?style=flat-square
 [lnk-github]: https://github.com/ivangabriele/from-ndjson/actions?query=branch%3Amain++
 [lnk-license]: https://github.com/ivangabriele/from-ndjson/blob/main/LICENSE
-[img-npm]: https://img.shields.io/npm/v/from-ndjson-base?style=flat-square
-[lnk-npm]: https://www.npmjs.com/package/from-ndjson-base
+[img-npm]: https://img.shields.io/npm/v/from-ndjson?style=flat-square
+[lnk-npm]: https://www.npmjs.com/package/from-ndjson
 [img-codecov]: https://img.shields.io/codecov/c/github/ivangabriele/from-ndjson/main?style=flat-square
 [lnk-codecov]: https://app.codecov.io/gh/ivangabriele/from-ndjson
