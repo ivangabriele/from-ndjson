@@ -7,33 +7,60 @@
 
 Convert ndjson stringified data into JSON-object arrays.
 
-## Usage
+## Install
 
 ```sh
 npm i -E from-ndjson
 ```
 
+or:
+
 ```sh
 yarn add -E from-ndjson
 ```
 
-Then extend it in your `.eslintrc`:
+## Usage
 
-```json
-{
-  "extends": "from-ndjson"
-}
+```js
+import fromNdjson from 'from-ndjson'
+
+const ndjsonSample = `
+  { "some": "thing" }
+  { "foo": 17, "bar": false, "quux": true }
+  { "may": { "include": "nested", "objects" : ["and", "arrays"] } }
+`
+
+const resultArray = fromNdjson(ndjsonSample)
+
+console.log(resultArray[0])
+// Output: { some: 'thing' }
+console.log(resultArray[1])
+// Output: { foo: 17, bar: false, quux: true }
 ```
 
-## Contribution
+## API
 
-### Getting Started
+### fromNdjson(input, options?)
 
-```sh
-npm i
+```ts
+function fromNdjson(data: string, options: FromNdjson.Options)
 ```
 
-### Releasing
+#### Options
+
+##### isStrict
+
+Type: `boolean`\
+Default: `'false'`
+
+By default, `fromNdjson()` will just skip the rows that `JSON.parse()` can't parse. If you have an ndjson with 5 rows
+and 2 unparsable ones, the returned array will only contain 3 rows: the ones that could be parsed.
+
+You can specify `{ isStrict: true }` if you prefer an error to be thrown when a row is invalid.
+
+## Contribute
+
+### Release
 
 ```sh
 npm version major|minor|patch
