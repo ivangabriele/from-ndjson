@@ -1,0 +1,3 @@
+{ "some": INVALID }
+{ "foo": 17, "bar": INVALID, "quux": true }
+{ "may": { "include": "nested", "objects" : INVALID } }

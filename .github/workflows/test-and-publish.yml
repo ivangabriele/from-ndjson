@@ -1,0 +1,47 @@
+name: Test & Publish
+
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Install
+        run: npm install
+      - name: Lint
+        run: npm run test:lint
+      - name: Test
+        run: npm run test:unit -- --coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+
+  publish:
+    name: Publish
+    needs: test
+    if: ${{ contains(github.ref, 'refs/tags/') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup (NPM)
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Setup (Github Packages)
+        uses: actions/setup-node@v2
+        with:
+          registry-url: "https://npm.pkg.github.com"
+      - run: npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

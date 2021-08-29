@@ -1,0 +1,46 @@
+{
+  "name": "from-ndjson",
+  "description": "Convert ndjson stringified data into JSON-object arrays.",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "eslint .",
+    "test:unit": "jest",
+    "preversion": "npm test",
+    "postversion": "node ./scripts/finalizeVersionBump.js"
+  },
+  "devDependencies": {
+    "@ivangabriele/eslint-config-base": "1.4.1",
+    "@ivangabriele/prettier-config": "1.1.0",
+    "eslint-plugin-jest": "24.4.0",
+    "husky": "7.0.1",
+    "jest": "27.1.0",
+    "lint-staged": "11.1.2",
+    "shelljs": "0.8.4"
+  },
+  "prettier": "@ivangabriele/prettier-config",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "homepage": "https://github.com/ivangabriele/from-ndjson#readme",
+  "repository": "https://github.com/ivangabriele/from-ndjson",
+  "bugs": {
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://github.com/ivangabriele/from-ndjson/issues"
+  },
+  "author": {
+    "name": "Ivan Gabriele",
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://www.ivangabriele.com"
+  },
+  "keywords": [
+    "ndjson",
+    "json",
+    "convert",
+    "parse"
+  ]
+}
