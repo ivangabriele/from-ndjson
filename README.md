@@ -69,4 +69,4 @@ to the remote repository.
 [img-npm]: https://img.shields.io/npm/v/from-ndjson?style=flat-square
 [lnk-npm]: https://www.npmjs.com/package/from-ndjson
 [img-codecov]: https://img.shields.io/codecov/c/github/ivangabriele/from-ndjson/main?style=flat-square
-[lnk-codecov]: https://app.codecov.io/gh/ivangabriele/from-ndjson
+[lnk-codecov]: https://app.codecov.io/gh/ivangabriele/from-ndjson/branch/main
