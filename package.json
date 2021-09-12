@@ -18,7 +18,7 @@
     "@ivangabriele/prettier-config": "1.1.0",
     "eslint-plugin-jest": "24.4.0",
     "husky": "7.0.2",
-    "jest": "27.1.0",
+    "jest": "27.1.1",
     "lint-staged": "11.1.2",
     "shelljs": "0.8.4"
   },
