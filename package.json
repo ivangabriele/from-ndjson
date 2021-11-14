@@ -16,7 +16,7 @@
   "devDependencies": {
     "@ivangabriele/eslint-config-base": "1.5.0",
     "@ivangabriele/prettier-config": "1.1.0",
-    "eslint-plugin-jest": "25.2.3",
+    "eslint-plugin-jest": "25.2.4",
     "husky": "7.0.4",
     "jest": "27.3.1",
     "lint-staged": "11.2.6",
