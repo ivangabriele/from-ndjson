@@ -1,13 +1,3 @@
 {
-  "extends": "@ivangabriele/eslint-config-base",
-  "rules": {},
-  "overrides": [
-    {
-      "files": ["**/*.test.js"],
-      "plugins": ["jest"],
-      "env": {
-        "jest": true
-      }
-    }
-  ]
+  "extends": "@ivangabriele/eslint-config-base"
 }
