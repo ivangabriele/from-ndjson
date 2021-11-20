@@ -14,33 +14,30 @@
     "postversion": "node ./scripts/finalizeVersionBump.js"
   },
   "devDependencies": {
+    "@ivangabriele/commitlint-config": "1.0.2",
     "@ivangabriele/eslint-config-base": "1.5.0",
     "@ivangabriele/prettier-config": "1.1.0",
     "eslint-plugin-jest": "25.2.4",
     "husky": "7.0.4",
     "jest": "27.3.1",
-    "lint-staged": "12.0.2",
     "shelljs": "0.8.4"
-  },
-  "prettier": "@ivangabriele/prettier-config",
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "homepage": "https://github.com/ivangabriele/from-ndjson#readme",
-  "repository": "https://github.com/ivangabriele/from-ndjson",
-  "bugs": {
-    "email": "ivan.gabriele@gmail.com",
-    "url": "https://github.com/ivangabriele/from-ndjson/issues"
   },
   "author": {
     "name": "Ivan Gabriele",
     "email": "ivan.gabriele@gmail.com",
     "url": "https://www.ivangabriele.com"
   },
+  "bugs": {
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://github.com/ivangabriele/from-ndjson/issues"
+  },
+  "homepage": "https://github.com/ivangabriele/from-ndjson#readme",
   "keywords": [
     "ndjson",
     "json",
     "convert",
     "parse"
-  ]
+  ],
+  "prettier": "@ivangabriele/prettier-config",
+  "repository": "https://github.com/ivangabriele/from-ndjson"
 }
