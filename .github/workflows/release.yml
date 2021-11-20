@@ -19,8 +19,6 @@ jobs:
           node-version: 16
       - name: Install
         run: yarn
-      - name: Build
-        run: yarn build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
