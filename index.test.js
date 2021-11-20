@@ -116,27 +116,3 @@ describe('with an invalid sample', () => {
     })
   })
 })
-
-describe('with an invalid sample', () => {
-  describe('with { isStrict: false }', () => {
-    test('should return the expected result', async () => {
-      const samplePath = path.join(__dirname, 'mocks/invalidSample.ndjson')
-      const sample = await fs.readFile(samplePath, 'utf-8')
-
-      const result = fromNdjson(sample)
-
-      expect(result).toMatchObject([])
-    })
-  })
-
-  describe('with { isStrict: true }', () => {
-    test('should throw the expected error', async () => {
-      const samplePath = path.join(__dirname, 'mocks/invalidSample.ndjson')
-      const sample = await fs.readFile(samplePath, 'utf-8')
-
-      const call = () => fromNdjson(sample, { isStrict: true })
-
-      expect(call).toThrow('[from-ndjson] Could not parse row at line 1: { "some": INVALID }...')
-    })
-  })
-})
