@@ -1,9 +1,9 @@
 # from-ndjson
 
 [![License][img-license]][lnk-license]
-[![Build Status][img-github]][lnk-github]
-[![NPM Package][img-npm]][lnk-npm]
+[![CI Status][img-github]][lnk-github]
 [![Code Coverage][img-codecov]][lnk-codecov]
+[![NPM Version][img-npm]][lnk-npm]
 
 Convert ndjson stringified data into JSON-object arrays.
 
@@ -60,40 +60,15 @@ You can specify `{ isStrict: true }` if you prefer an error to be thrown when a 
 
 ## Contribute
 
-### Release
-
-```sh
-npm version major|minor|patch
-```
-
-This will automatically create a full tagged commit with packages version bump in a version branch before pushing them
-to the remote repository.
-
-### Recommended IDE Settings
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "eslint.codeActionsOnSave.mode": "all",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "eslint.format.enable": true,
-  "eslint.packageManager": "npm",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
+Please check the [CONTRIBUTING](CONTRIBUTING.md) document.
 
 ---
 
-[img-github]:
-  https://img.shields.io/github/workflow/status/ivangabriele/from-ndjson/Test%20&%20Publish/main?style=flat-square
+[img-codecov]: https://img.shields.io/codecov/c/github/ivangabriele/from-ndjson/main?style=flat-square
+[img-github]: https://img.shields.io/github/workflow/status/ivangabriele/from-ndjson/Check/main?style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/from-ndjson?style=flat-square
+[img-npm]: https://img.shields.io/npm/v/from-ndjson?style=flat-square
+[lnk-codecov]: https://app.codecov.io/gh/ivangabriele/from-ndjson/branch/main
 [lnk-github]: https://github.com/ivangabriele/from-ndjson/actions?query=branch%3Amain++
 [lnk-license]: https://github.com/ivangabriele/from-ndjson/blob/main/LICENSE
-[img-npm]: https://img.shields.io/npm/v/from-ndjson?style=flat-square
 [lnk-npm]: https://www.npmjs.com/package/from-ndjson
-[img-codecov]: https://img.shields.io/codecov/c/github/ivangabriele/from-ndjson/main?style=flat-square
-[lnk-codecov]: https://app.codecov.io/gh/ivangabriele/from-ndjson/branch/main
