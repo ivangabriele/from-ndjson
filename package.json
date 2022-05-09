@@ -19,7 +19,7 @@
     "codecov": "3.8.3",
     "eslint-plugin-jest": "26.1.5",
     "husky": "7.0.4",
-    "jest": "28.0.3"
+    "jest": "28.1.0"
   },
   "author": {
     "name": "Ivan Gabriele",
