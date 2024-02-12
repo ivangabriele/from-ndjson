@@ -12,7 +12,7 @@
     "test:unit": "jest"
   },
   "devDependencies": {
-    "@ivangabriele/commitlint-config": "1.1.0",
+    "@ivangabriele/commitlint-config": "2.0.3",
     "@ivangabriele/eslint-config-base": "2.1.4",
     "@ivangabriele/prettier-config": "3.1.0",
     "@ivangabriele/semantic-release-config-base": "2.1.0",
