@@ -517,12 +517,12 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@commitlint/config-conventional@17.6.6":
-  version "17.6.6"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.6.6.tgz#5452aa601d34503b88530ba38432116bcffdd005"
-  integrity sha512-phqPz3BDhfj49FUYuuZIuDiw+7T6gNAEy7Yew1IBHqSohVUCWOK2FXMSAExzS2/9X+ET93g0Uz83KjiHDOOFag==
+"@commitlint/config-conventional@18.6.0":
+  version "18.6.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-18.6.0.tgz#88da3e34e2bfcd8a5d46bcc472553e7f63f35323"
+  integrity sha512-CDCOf2eJz9D/TL44IBks0stM9TmdLCNE2B48owIU3YCadwzts/bobXPScagIgPQF6hhKYMEdj5zpUDlmbwuqwQ==
   dependencies:
-    conventional-changelog-conventionalcommits "^5.0.0"
+    conventional-changelog-conventionalcommits "^7.0.2"
 
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
@@ -579,12 +579,12 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@ivangabriele/commitlint-config@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ivangabriele/commitlint-config/-/commitlint-config-1.1.0.tgz#a891100293c76ac8be84511071abb76913b15f37"
-  integrity sha512-bqK4GbEewsHEfHwvM6rjPnHJwR3fJx2WWJ/R80gnVPRLmyzimU/PbY1vrFY9lDfG2g1PU/PMqz9lz7daiqL/Hg==
+"@ivangabriele/commitlint-config@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@ivangabriele/commitlint-config/-/commitlint-config-2.0.3.tgz#345b456a7d6bf165f8467be84625991ddc6bea10"
+  integrity sha512-cQCKZGwt51qKoPTJPkvLvxZr8yhw+GqcaCT0xCdjOKuoVHsalURntkYm35x/oNcLx6Jyd92dIkZHGaPYMcnp/w==
   dependencies:
-    "@commitlint/config-conventional" "17.6.6"
+    "@commitlint/config-conventional" "18.6.0"
 
 "@ivangabriele/eslint-config-base@2.1.4":
   version "2.1.4"
@@ -2165,14 +2165,12 @@ conventional-changelog-angular@^5.0.0:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-conventionalcommits@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-5.0.0.tgz#41bdce54eb65a848a4a3ffdca93e92fa22b64a86"
-  integrity sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==
+conventional-changelog-conventionalcommits@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-7.0.2.tgz#aa5da0f1b2543094889e8cf7616ebe1a8f5c70d5"
+  integrity sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==
   dependencies:
     compare-func "^2.0.0"
-    lodash "^4.17.15"
-    q "^1.5.1"
 
 conventional-changelog-writer@^5.0.0:
   version "5.0.0"
