@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@ivangabriele/commitlint-config": "1.1.0",
-    "@ivangabriele/eslint-config-base": "2.1.4",
+    "@ivangabriele/eslint-config-base": "10.0.0",
     "@ivangabriele/prettier-config": "3.1.0",
     "@ivangabriele/semantic-release-config-base": "2.1.0",
     "codecov": "3.8.3",
