@@ -14,12 +14,12 @@
   "devDependencies": {
     "@ivangabriele/commitlint-config": "1.1.0",
     "@ivangabriele/eslint-config-base": "2.1.4",
-    "@ivangabriele/prettier-config": "3.1.0",
+    "@ivangabriele/prettier-config": "3.2.0",
     "@ivangabriele/semantic-release-config-base": "2.1.0",
     "codecov": "3.8.3",
-    "eslint-plugin-jest": "27.2.3",
+    "eslint-plugin-jest": "27.9.0",
     "husky": "8.0.3",
-    "jest": "29.6.1"
+    "jest": "29.7.0"
   },
   "author": {
     "name": "Ivan Gabriele",
